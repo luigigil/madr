@@ -16,7 +16,7 @@ e.g:
 | Backend Services/Architecture | AWS, Lambdas, EC2, microservices, Node | A write up and diagram of the backend architecture - platforms/tools being used, costs associated, how they relate, the why behind the decision |
 | Frontend - blueprint/floor plan solution | Pre-existing npm module, 3rd party tool, custom | A write up the implementation notes on how to accomplish the blueprint/floor plan technical challenge |
 | Automated testing | Tools and specifications | A write up of the tools being used for automated testing and general rules to follow on what to test and when to test for automated testing |
-| Logging | Cloud Watch, Serverless, etc + logging plan - what to log, when to log, how to view | A write up for the tool(s) being used for logging, how admins can access the logs, and guidelines for what to log. There will be technical errors and user errors - logging will serve as a mechanism to get answers quickly for AOA internal, admin, and customer support. |
+| Logging | Cloud Watch, Serverless, etc + logging plan - what to log, when to log, how to view | A write up for the tool(s) being used for logging, how admins can access the logs, and guidelines for what to log. There will be technical errors and user errors - logging will serve as a mechanism to get answers quickly for company's internal, admin, and customer support. |
 | Multi-environment | How to preview and test dev changes - frontend, backend, and data changes | A write up and diagram for the various environments - databases, hosting, dev/stage/multi-dev decisions, and workflow |
 | Data model | Defined in Lucid charts or other | A write up and diagram to show the data model and data references. |
 
@@ -27,8 +27,8 @@ e.g:
 | Subject | Description | 
 | ------------- | -------------- |
 | Secure and private | Project data and user data cannot be accessible to the outside world through the app or through any APIs. Additionally, users without permissions to other projects, can not access or view data of other projects. |
-| Separate testing environment(s) | The ability for Human Spectrum and AOA to create and test projects, users, and interaction without compromising the production database. The ability to preview code changes in a static (consistent URL) environment |
-| Access to logs | A non-engineer (at AOA or at Human Spectrum) can access logs to troubleshoot an issue - technical issues and user error issues (even if reported as a technical bug) |
+| Separate testing environment(s) | The ability for Stakeholder's to create and test projects, users, and interaction without compromising the production database. The ability to preview code changes in a static (consistent URL) environment |
+| Access to logs | A non-engineer (Stakeholder, PM, PO) can access logs to troubleshoot an issue - technical issues and user error issues (even if reported as a technical bug) |
 | Technical alignment | The tech specification should not contain ambiguity or punted decisions. All engineers reading this should be able to understand with clarity the decisions made, the reason behind the decisions, and how everything flows together. |
 
 2. For each requirement of thing you want to decide, create and ADR in markdown
