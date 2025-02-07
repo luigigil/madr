@@ -1,0 +1,26 @@
+User: {
+  label: "User"
+  shape: person
+}
+
+Vercel_Edge: {
+  label: "Vercel Edge Network"
+  shape: cloud
+}
+
+Nextjs_Functions: {
+  label: "Next.js Serverless Functions"
+  shape: rectangle
+}
+
+Backend: {
+  label: "Backend APIs / DB"
+  shape: cylinder
+}
+
+User -> Vercel_Edge: "HTTP/HTTPS"
+Vercel_Edge -> Nextjs_Functions: "Routes SSR/SSG requests"
+Nextjs_Functions -> Backend: "Fetch data if needed"
+Nextjs_Functions -> Vercel_Edge: "Renders HTML"
+Vercel_Edge -> User: "Final response"
+

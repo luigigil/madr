@@ -1,0 +1,23 @@
+User: {
+  label: "User"
+  shape: person
+}
+
+App_Backend: {
+  label: "Application Backend"
+  shape: rectangle
+}
+
+AWS: {
+  label: "AWS Cloud"
+
+  RDS_Postgres: {
+    label: "RDS for PostgreSQL"
+    shape: cylinder
+  }
+}
+
+User -> App_Backend: "Requests"
+App_Backend -> AWS.RDS_Postgres: "Queries" 
+
+
