@@ -259,7 +259,7 @@ and easily navigate through project's architecture.
 
 ## Example
 
-[Reel](/Users/luigigil/work/aoa/human-spectrum/reel/)
+[docs](./docs/)
 
 ## Reference
 
